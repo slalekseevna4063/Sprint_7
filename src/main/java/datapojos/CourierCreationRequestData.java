@@ -10,6 +10,7 @@ public class CourierCreationRequestData {
         this.password = password;
         this.firstName = firstName;
     }
+
     public CourierCreationRequestData() {
     }
 
@@ -17,20 +18,20 @@ public class CourierCreationRequestData {
         return login;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
     public void setLogin(String login) {
         this.login = login;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getFirstName() {
+        return firstName;
     }
 
     public void setFirstName(String firstName) {

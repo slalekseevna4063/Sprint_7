@@ -1,5 +1,7 @@
 package datapojos;
 
+import java.util.List;
+
 public class OrderCreationRequestData {
     private String firstName;
     private String lastName;
@@ -9,9 +11,9 @@ public class OrderCreationRequestData {
     private int rentTime;
     private String deliveryDate;
     private String comment;
-    private String[] color;
+    private List<String> color;
 
-    public OrderCreationRequestData(String firstName, String lastName, String address, String metroStation, String phone, int rentTime, String deliveryDate, String comment, String[] color) {
+    public OrderCreationRequestData(String firstName, String lastName, String address, String metroStation, String phone, int rentTime, String deliveryDate, String comment, List<String> color) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -87,11 +89,11 @@ public class OrderCreationRequestData {
         this.comment = comment;
     }
 
-    public String[] getColor() {
+    public List<String> getColor() {
         return color;
     }
 
-    public void setColor(String[] color) {
+    public void setColor(List<String> color) {
         this.color = color;
     }
 }
